@@ -1,0 +1,23 @@
+{
+  "tasks": [
+    {
+      "detail": "Compiles the entire project, building all artifacts.",
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "label": "🛠️ Build",
+      "problemMatcher": [],
+      "script": "build",
+      "type": "npm"
+    },
+    {
+      "type": "npm",
+      "script": "clean",
+      "problemMatcher": [],
+      "label": "🧹 Clean",
+      "detail": "Clear the cache and delete all artifacts."
+    }
+  ],
+  "version": "2.0.0"
+}

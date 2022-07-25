@@ -1,0 +1,25 @@
+# Yarn
+.yarn/
+
+# TypeScript artifacts
+dist/
+
+# Hardhat artifacts
+artifacts/
+cache/
+
+# Typechain artifacts
+src/types/
+
+# solidity-coverage artifacts
+coverage/
+coverage.json
+
+# hardhat-deploy artifacts
+deployments/
+
+# eth-gas-reporter artifacts
+gasReporterOutput.json
+
+# JUnit report
+test-results.xml

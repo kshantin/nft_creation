@@ -1,0 +1,19 @@
+{
+  "jsc": {
+    "externalHelpers": true,
+    "parser": {
+      "syntax": "typescript"
+    },
+    "target": "es2017",
+    "keepClassNames": true,
+    "paths": {
+      "#types/*": ["types/*"]
+    },
+    "baseUrl": "./src/"
+  },
+  "module": {
+    "type": "es6"
+  },
+  "sourceMaps": true,
+  "inlineSourcesContent": true
+}

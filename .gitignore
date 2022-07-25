@@ -1,0 +1,38 @@
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+node_modules/
+
+# TypeScript artifacts
+dist/
+
+# Hardhat artifacts
+artifacts/
+cache/
+
+# Typechain artifacts
+src/types/*
+!src/types/common.ts
+!src/types/Greeter.ts
+!src/types/factories/Greeter__factory.ts
+
+# dotenv config file
+.env
+
+# solidity-coverage artifacts
+coverage/
+coverage.json
+
+# eth-gas-reporter artifacts
+gasReporterOutput.json
+
+# OpenMetrics report
+gas-profile-report.txt
+
+# JUnit report
+test-results.xml

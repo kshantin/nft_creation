@@ -1,0 +1,13 @@
+{
+  "overrides": [
+    {
+      "files": "*.sol",
+      "options": {
+        "compiler": "0.8.11",
+        "printWidth": 120,
+        "tabWidth": 4
+      }
+    }
+  ],
+  "trailingComma": "all"
+}

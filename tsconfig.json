@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src/",
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "exactOptionalPropertyTypes": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "inlineSources": true,
+    "lib": ["ES2017"],
+    "module": "ES2015",
+    "moduleResolution": "Node",
+    "newLine": "LF",
+    "outDir": "./dist/",
+    "paths": {
+      "#types/*": ["types/*"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2017"
+  },
+  "exclude": ["node_modules"],
+  "files": ["./hardhat.config.ts"],
+  "include": [
+    "./scripts/**/*.ts",
+    "./src/**/*.ts",
+    "./tasks/**/*.ts",
+    "./tests/**/*.ts"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    },
+    "transpileOnly": true,
+    "transpiler": "ts-node/transpilers/swc-experimental"
+  }
+}

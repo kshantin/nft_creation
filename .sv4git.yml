@@ -1,0 +1,31 @@
+version: "1.0"
+
+versioning:
+  update-major: []
+  update-minor: [feat]
+  update-patch: [build, ci, chore, fix, perf, refactor, test]
+  ignore-unknown: false
+
+tag:
+  pattern: "v%d.%d.%d"
+
+branches:
+  prefix: ([a-z]+\/)?
+  suffix: (-.*)?
+  disable-issue: false
+  skip: [master, main]
+  skip-detached: false
+
+commit-message:
+  types:
+    [build, ci, chore, docs, feat, fix, perf, refactor, revert, style, test]
+  scope:
+    values: []
+  footer:
+    issue:
+      key: Issue
+      key-synonyms: [issue, ISSUE]
+      use-hash: true
+      add-value-prefix: ""
+  issue:
+    regex: "[0-9]+"

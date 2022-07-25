@@ -1,0 +1,48 @@
+{
+  "[solidity]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.rulers": [120]
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.rulers": [80],
+  "files.exclude": {
+    "**/.editorconfig": false,
+    "**/.git*": false,
+    "**/.husky": false,
+    "**/.vscode": false,
+    "**/.yarn": false,
+    "**/.*rc": false,
+    "**/*.lock": false,
+    "**/*.yml": false,
+    "**/artifacts": false,
+    "**/cache": false,
+    "**/coverage*": false,
+    "**/node_modules": false,
+    "**/typings": false,
+    "**/LICENSE": false,
+    "**/tsconfig*": false,
+    "**/.sol*": false,
+    "**/.*ignore": false,
+    "**/gas-profile-report.txt": false,
+    "**/gasReporterOutput.json": false,
+    "**/*.xml": false,
+    "**/Dockerfile": false,
+    "**/*.tsbuildinfo": false
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/deployments": true
+  },
+  "mochaExplorer.files": "./tests/**/*.ts",
+  "mochaExplorer.require": "@swc-node/register",
+  "solidity.packageDefaultDependenciesContractsDirectory": "",
+  "solidity.packageDefaultDependenciesDirectory": "./node_modules/",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "./node_modules/typescript/lib/",
+  "solidity.compilerOptimization": 800
+}
