@@ -2,6 +2,7 @@ import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
 import dotenv from "dotenv";
+import "hardhat-deploy";
 import "hardhat-gas-reporter";
 import "hardhat-packager";
 import { HardhatUserConfig } from "hardhat/config";
@@ -16,7 +17,7 @@ const {
   INFURA_PROJECT_ID = "84842078b09946638c03157f83405213",
   MNEMONIC = "overn merry manual oil detail fit pair boat possible pitch icon donkey",
   REPORT_GAS = "false",
-  SOLIDITY_VERSION = "0.8.11",
+  SOLIDITY_VERSION = "0.8.15",
 } = process.env;
 
 if (!MNEMONIC) {
@@ -141,6 +142,9 @@ const config: HardhatUserConfig = {
   packager: {
     contracts: ["Greeter"],
     includeFactories: true,
+  },
+  namedAccounts: {
+    deployer: 0,
   },
 };
 

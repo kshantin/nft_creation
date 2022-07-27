@@ -10,7 +10,7 @@
   },
   "description": "",
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.11",
     "@nomiclabs/hardhat-waffle": "^2.0.2",
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.133",
