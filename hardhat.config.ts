@@ -17,7 +17,7 @@ const {
   INFURA_PROJECT_ID = "84842078b09946638c03157f83405213",
   MNEMONIC = "overn merry manual oil detail fit pair boat possible pitch icon donkey",
   REPORT_GAS = "false",
-  SOLIDITY_VERSION = "0.8.15",
+  SOLIDITY_VERSION = "^0.8.15",
 } = process.env;
 
 if (!MNEMONIC) {

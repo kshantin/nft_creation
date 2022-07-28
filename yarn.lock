@@ -1190,6 +1190,7 @@ __metadata:
     "@ethersproject/providers": ^5.5.2
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.11"
     "@nomiclabs/hardhat-waffle": ^2.0.2
+    "@openzeppelin/contracts": ^4.7.2
     "@swc/cli": ^0.1.55
     "@swc/core": ^1.2.133
     "@swc/helpers": ^0.3.2
@@ -1298,6 +1299,13 @@ __metadata:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
   checksum: c96381d4a37448ea280951e46233f7e541058cf57a57d4094dd4bdcaae43fa5872b5f2eb6bfb004591a68e29c5877abe3cdc210cb3588cbf20ab2877f31a7de7
+  languageName: node
+  linkType: hard
+
+"@openzeppelin/contracts@npm:^4.7.2":
+  version: 4.7.2
+  resolution: "@openzeppelin/contracts@npm:4.7.2"
+  checksum: f02f2b44cdec46bafe1b608b495b6e2dc161ae4a3f308ba9921787cb77b8b877232839047b12f03b4d0fee9ca9208887fd5b9e7bdbf9a8c4f01021b1f1181233
   languageName: node
   linkType: hard
 
