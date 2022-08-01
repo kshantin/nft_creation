@@ -1,4 +1,4 @@
-pragma solidity ^0.8.15;
+pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -26,6 +26,6 @@ contract DinoFT is ERC721 {
     }
 
     function _baseURI() internal view virtual override returns (string memory) {
-        return "https://gateway.pinata.cloud/ipfs/QmWstxVHFTBeAALaonh2AEKc6Tt6haJjbJSWuyppSy3Vsd/";
+        return "https://gateway.pinata.cloud/ipfs/QmQ8sdrok3JaFrwwSxYcMmjX4vMx9ko4BBYe3kFdPhmqxi/";
     }
 }
