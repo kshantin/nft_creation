@@ -26,6 +26,6 @@ contract DinoFT is ERC721 {
     }
 
     function _baseURI() internal view virtual override returns (string memory) {
-        return "https://gateway.pinata.cloud/ipfs/QmQ8sdrok3JaFrwwSxYcMmjX4vMx9ko4BBYe3kFdPhmqxi/";
+        return "https://gateway.pinata.cloud/ipfs/QmQQyGvHcWiRis987ZJ1mriY7yu4CLrK5b7SYYrcgxcgqe/";
     }
 }
