@@ -92,6 +92,7 @@
   },
   "repository": "github:gulitsky/solidity-template",
   "scripts": {
+    "build-rinkeby": "npx hardhat --network rinkeby run deploy/deploy.ts",
     "build": "hardhat compile",
     "bundle:cjs": "spack",
     "clean": "shx rm -rf ./artifacts/ ./cache/ ./coverage/ ./dist/ ./coverage.json ./gasReporterOutput.json ./gas-profile-report.txt ./test-results.xml ./tsconfig.prod.tsbuildinfo",
