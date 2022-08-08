@@ -1,17 +1,17 @@
 const mergeImages = require("merge-images");
-const { Canvas } = require("node-canvas");
+const { Canvas, Image } = require("node-canvas");
 const path = require("path");
 const fs = require("fs");
 const { MersenneTwister19937, bool, real } = require("random-js");
 
-const layersPath = path.join(process.cwd(), "layers");
-const outputPath = path.join(process.cwd(), "output");
+const layersPath = path.join(process.cwd(), "Dino");
+const outputPath = path.join(process.cwd(), "Result");
 
 async function generateNFTs(num, layersPath, outputPath) {
   const content = require(layersPath + "/content");
   let generated = new Set();
 
-  for (let tokenId = 0; tokenId < num; tokenId++) {
+  for (let tokenId = 1; tokenId < num; tokenId++) {
     console.log(`Generating NFT #${tokenId} …`);
     let selection = randomlySelectLayers(layersPath, content.layers);
     const traitsStr = JSON.stringify(selection.selectedTraits);
@@ -24,7 +24,7 @@ async function generateNFTs(num, layersPath, outputPath) {
       generated.add(traitsStr);
       await mergeLayersAndSave(
         selection.images,
-        path.join(outputPath, `${tokenId}.png`),
+        path.join(outputPath, "images", `${tokenId}.png`),
       );
 
       let metadata = generateMetadata(
@@ -33,8 +33,8 @@ async function generateNFTs(num, layersPath, outputPath) {
         selection.selectedTraits,
       );
       fs.writeFileSync(
-        path.join(outputPath, `${tokenId}`),
-        JSON.stringify(metadata),
+        path.join(outputPath, "properties", `${tokenId}`),
+        JSON.stringify(metadata, null, 2),
       );
     }
   }
@@ -86,6 +86,7 @@ function pickWeighted(mt, options) {
 }
 
 async function mergeLayersAndSave(layers, outputFile) {
+  console.log(layers);
   const image = await mergeImages(layers, { Canvas: Canvas, Image: Image });
   saveBase64Image(image, outputFile);
 }
@@ -96,4 +97,4 @@ function saveBase64Image(base64PngImage, filename) {
   fs.writeFileSync(filename, imageBuffer);
 }
 
-generateNFTs(200, layersPath, outputPath);
+generateNFTs(50, layersPath, outputPath);
