@@ -36,3 +36,8 @@ gas-profile-report.txt
 
 # JUnit report
 test-results.xml
+
+# files with png
+Dino/
+Result/
+
